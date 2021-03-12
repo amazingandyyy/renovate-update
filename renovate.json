@@ -7,7 +7,6 @@
     ":updateNotScheduled",
     ":ignoreModulesAndTests",
     ":disableRateLimiting",
-    ":combinePatchMinorReleases",
     "workarounds:all"
   ],
   "addLabels": ["renovatebot"],
