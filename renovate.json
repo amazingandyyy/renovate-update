@@ -1,6 +1,5 @@
 {
   "addLabels": ["renovatebot"],
-  "kustomization": {},
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
