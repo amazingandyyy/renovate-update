@@ -5,9 +5,8 @@
     ":semanticPrefixFixDepsChoreOthers",
     ":updateNotScheduled",
     ":ignoreModulesAndTests",
-    ":autodetectPinVersions",
     ":disableRateLimiting",
-    ":separatePatchReleases",
+    ":combinePatchMinorReleases",
     "workarounds:all"
   ],
   "addLabels": ["renovatebot"],
