@@ -2,6 +2,7 @@
   "extends": [
     ":separateMajorReleases",
     ":prImmediately",
+    ":rebaseStalePrs",
     ":semanticPrefixFixDepsChoreOthers",
     ":updateNotScheduled",
     ":ignoreModulesAndTests",
