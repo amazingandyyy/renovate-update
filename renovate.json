@@ -3,10 +3,25 @@
     "config:base"
   ],
   "addLabels": ["renovatebot"],
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["minor", "patch"],
-      "labels": ["automerge"]
-    }
-  ]
+  "major": {},
+  "minor": {
+    "packageRules": [
+      {
+        "labels": [
+          "dependencies",
+          "automerge"
+        ]
+      }
+    ]
+  },
+  "patch": {
+    "packageRules": [
+      {
+        "labels": [
+          "dependencies",
+          "automerge"
+        ]
+      }
+    ]
+  }
 }
