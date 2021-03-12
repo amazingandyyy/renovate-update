@@ -1,39 +1,29 @@
 {
   "extends": [
     ":separateMajorReleases",
-    ":combinePatchMinorReleases",
-    ":ignoreUnstable",
     ":prImmediately",
     ":semanticPrefixFixDepsChoreOthers",
     ":updateNotScheduled",
     ":ignoreModulesAndTests",
     ":autodetectPinVersions",
-    ":prConcurrentLimit20",
+    ":disableRateLimiting",
+    ":separatePatchReleases",
     "workarounds:all"
   ],
   "addLabels": ["renovatebot"],
+  "requiredStatusChecks": [],
   "major": {},
   "minor": {
-    "packageRules": [
-      {
-        "packagePatterns": [".*"],
-        "labels": [
-          "dependencies",
-          "automerge"
-        ]
-      }
+    "labels": [
+      "dependencies",
+      "automerge"
     ]
   },
   "patch": {
-    "packageRules": [
-      {
-        "packagePatterns": [".*"],
-        "labels": [
-          "dependencies",
-          "automerge"
-        ],
-        "automerge": true
-      }
-    ]
+    "labels": [
+      "dependencies",
+      "automerge"
+    ],
+    "automerge": true
   }
 }
