@@ -1,0 +1,10 @@
+{
+  "addLabels": ["renovatebot"],
+  "kustomization": {},
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "labels": ["automerge"]
+    }
+  ]
+}
