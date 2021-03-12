@@ -1,7 +1,15 @@
 {
   "extends": [
-    "config:base",
-    ":disableRateLimiting"
+    ":separateMajorReleases",
+    ":combinePatchMinorReleases",
+    ":ignoreUnstable",
+    ":prImmediately",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":updateNotScheduled",
+    ":ignoreModulesAndTests",
+    ":autodetectPinVersions",
+    ":prConcurrentLimit20",
+    "workarounds:all"
   ],
   "addLabels": ["renovatebot"],
   "major": {},
